@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SolvSafety
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button icon-only (click)="logOut()">
+        <ion-icon name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div padding class="logo-div">
+    <img src="assets/imgs/app_logo.PNG" alt="logo" />
+    <!-- <img src="assets/imgs/client_logo.jpeg" /> -->
+    <h5>qantas</h5>
+  </div>
+
+  
+  <h5 margin>Select a form below to compolete</h5>
+
+  <div class="separate-line"></div>
+
+  <ion-item *ngFor="let module of modules" (click)="gotoFormFill(module);">
+    <ion-icon margin item-start color="success" [name]="module.icon"></ion-icon>
+    <ion-label>{{module.name}}</ion-label>
+  </ion-item>
+</ion-content>

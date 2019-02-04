@@ -1,0 +1,28 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content padding>
+  <img margin class="logo" src="assets/imgs/app_logo.PNG" />
+  <div class="separate-line"></div>
+  <p class="title">Enter your details below to login:</p>
+  <ion-item lines="none">
+    <ion-label color="primary" position="stacked">Email:</ion-label>
+    <ion-input padding type="email" placeholder="Enter the email address" [(ngModel)]="loginInfo.email"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label color="primary" position="stacked">Password:</ion-label>
+    <ion-input type="password" placeholder="Enter the password" [(ngModel)]="loginInfo.password"></ion-input>
+  </ion-item>
+  <ion-button icon-start class="login-btn" color="success" (click)="goHome();">
+    <ion-icon padding-right name="ios-log-in"></ion-icon>
+    Login
+  </ion-button>
+  <div color="primary" class="forgot-pwd" (click)="gotoResetPwd();">
+    <p>
+      forgot password
+    </p>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "solvsafety",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

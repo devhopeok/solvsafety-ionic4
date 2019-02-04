@@ -1,0 +1,41 @@
+.detail-title {
+  text-align: center;
+  font-size: 4.5vw;
+}
+
+.menu-title-icon {
+  font-size: 32px;
+  padding-right: 5px;
+}
+
+.button-div {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.module-btn {
+  width: 40%;
+  margin: 4%;
+
+  .btn-icon {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    font-size: 25px;
+    // margin: 10px;
+  }
+}
+
+.image {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
