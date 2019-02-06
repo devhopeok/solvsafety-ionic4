@@ -29,8 +29,6 @@ export class HomePage implements OnInit {
 
   gotoFormFill(module) {
   	this.paramsService.setParam(module);
-  	// this.navCtrl.navigateRoot('/tabs');
-  	// this.navCtrl.navigateForward('/tabs');
   	this.navCtrl.navigateForward('/form-fill');
   }
 

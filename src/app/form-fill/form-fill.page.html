@@ -19,11 +19,6 @@
     </ion-datetime>
   </ion-item>
 
- <!--  <ion-item lines="none">
-    <ion-label color="primary" position="stacked">Date of {{module.date}}:</ion-label>
-    <ion-input placeholder=" / /" type="date"></ion-input>
-  </ion-item> -->
-
   <ion-item lines="none">
     <ion-label color="medium" position="stacked">Type of {{module.name}}:</ion-label>
     <ion-select [(ngModel)]="report.type">
@@ -48,12 +43,6 @@
     </ion-select>
   </ion-item>
 
-<!--   <ion-item>
-    <ion-label color="primary" position="stacked">Time of {{module.name}}:</ion-label>
-    <ion-datetime displayFormat="HH:mm A" placeholder="HH:mm A" [(ngModel)]="report.time">
-    </ion-datetime>
-  </ion-item> -->
-
  	<ion-item lines="none">
     <ion-label color="medium" position="stacked">Location:</ion-label>
     <ion-input type="string"></ion-input>
@@ -68,16 +57,6 @@
   <ion-list-header>
     <ion-label>Injured Worker</ion-label>
   </ion-list-header>
-
-
-<!--   <div class="button-div">
-    <ion-button icon-start class="module-btn" color="success" (click)="onAddPhoto();">
-      <ion-icon padding-right class="btn-icon" name="camera"></ion-icon>
-      Add Photo
-    </ion-button>
-  </div>
-
-  <img class="image" [src]="report.imageUri" *ngIf="report.imageUri != ''"/> -->
 
   <div class="button-div">
     <ion-button icon-start class="module-btn" color="success" (click)="onSave();">

@@ -36,7 +36,6 @@ export class LoginPage implements OnInit {
     
     localStorage.setItem('loginInfo', JSON.stringify(this.loginInfo));
     localStorage.setItem('lastLoggedIn', new Date().toString());
-    // this.navCtrl.navigateRoot('/tabs');
     this.navCtrl.navigateForward('/home');
   }
 
