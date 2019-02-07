@@ -24,6 +24,20 @@ export class FormFillPage implements OnInit {
     type: '',
     description: '',
     imageUri: '',
+    actions: [
+	    {
+	    	checked: false,
+	    	action: 'Get three quotes',
+	    	owner: 'S. Smith',
+	    	Due: '01/Mar/2019',
+	    },
+	    {
+	    	checked: true,
+	    	action: 'Get three quotes',
+	    	owner: 'S. Smith',
+	    	Due: '01/Mar/2019',
+	    },
+    ],
   };
 
   constructor(
@@ -191,6 +205,22 @@ export class FormFillPage implements OnInit {
     });
  
     actionSheet.present();
+  }
+
+  onClose(item) {
+    item.close();
+    item.setElementClass("active-sliding", false);
+    item.setElementClass("active-slide", false);
+    item.setElementClass("active-options-right", false);
+  }
+
+  onEdit(item, index) {
+    // this.navCtrl.push(EditQuestionPage, {index});
+    this.onClose(item);
+  }
+
+  onDelete(item, index) {
+    // this.globalProvider.questions.splice(index, 1);
   }
 
   navigateToAddComment() {

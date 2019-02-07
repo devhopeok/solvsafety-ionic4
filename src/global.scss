@@ -16,9 +16,13 @@ ion-label {
 
 ion-select,
 ion-datetime,
-ion-input,
-ion-textarea {
+ion-input {
   padding: 10px !important;
+  border: solid 1px var(--ion-color-medium);
+}
+
+ion-textarea {
+  padding: 0 10px !important;
   border: solid 1px var(--ion-color-medium);
 }
 

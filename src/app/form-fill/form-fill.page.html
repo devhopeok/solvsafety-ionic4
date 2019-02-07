@@ -58,6 +58,44 @@
     <ion-label>Injured Worker</ion-label>
   </ion-list-header>
 
+
+  <ion-list-header>
+  	<ion-label>Actions</ion-label>
+  </ion-list-header>
+
+
+
+  <ion-item-sliding #slidingItem *ngFor="let action of report.actions; let i = index;">
+    <ion-item #item>
+<!-- <ion-icon item-start [name]="question.icon" (click)="onEdit(i);">
+      </ion-icon>
+      <div (click)="onEdit(i);">
+        <p class="question-label">{{question.question}}</p>
+        <p>{{question.answerType}}</p>
+      </div>
+      <ion-icon item-end name="menu"></ion-icon> -->
+      <ion-label>{{action.action}}</ion-label>
+    </ion-item>
+
+    <ion-item-options side="end" >
+      <ion-button class="slide-btn" (click)="onEdit(slidingItem, i);">
+      	<div>
+	        <ion-icon class="slide-icon" name="md-create"></ion-icon>
+	        <span></span>>Edit</p>
+	      </div>
+      </ion-button>
+      <ion-button class="slide-btn" ion-button color="danger" (click)="onDelete(slidingItem, i)">
+        <ion-icon class="slide-icon" name="md-trash"></ion-icon>
+        <p>Delete</p>
+      </ion-button>
+      <ion-button class="slide-btn" ion-button color="dark" (click)="onClose(slidingItem)">
+        <ion-icon class="slide-icon" name="md-close-circle"></ion-icon>
+        Close
+      </ion-button>
+    </ion-item-options>
+
+  </ion-item-sliding>
+
   <div class="button-div">
     <ion-button icon-start class="module-btn" color="success" (click)="onSave();">
       <ion-icon padding-right class="btn-icon" name="clipboard"></ion-icon>

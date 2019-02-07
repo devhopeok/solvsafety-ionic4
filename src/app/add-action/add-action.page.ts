@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-action.page.scss'],
 })
 export class AddActionPage implements OnInit {
+	report = {
+		description: '',
+		type: '',
+		date: '',
+	};
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSave() {
+
+  }
+
+  onCancel() {
+
   }
 
 }

@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-comment.page.scss'],
 })
 export class AddCommentPage implements OnInit {
-
+	report = {
+		comment: '',
+	};
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSave() {
+
+  }
+
+  onCancel() {
+
   }
 
 }
